@@ -1,0 +1,211 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+   max-width: 100%;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-right: 20px;
+}
+
+nav li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav a{
+    background-color: #f2f2f2;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    border-radius: 3px;
+    transition: all .3s ease-in;
+
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+    transition: all .3s;
+}
+
+#particles-js {
+    top: 0;
+    left: 0;
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+body{
+    max-width: 100%;
+    background-color: rgb(68, 68, 68);
+}
+
+.container{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    color: black;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 99;
+}
+
+
+.formulario div:nth-of-type(1),
+.formulario div:nth-of-type(2),
+.formulario div:nth-of-type(3),
+.formulario div:nth-of-type(4),
+.formulario div:nth-of-type(5),
+.formulario div:nth-of-type(6),
+.formulario div:nth-of-type(8),
+.btn
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.date input{
+    max-width: 33%;
+    margin:  0 .1%;
+    padding: 0 .3rem;
+}
+
+
+.btn{
+    padding: 0;
+}
+
+button{
+    padding: 1rem 0;
+    background-color: rgb(68, 68, 68);
+    color: aliceblue;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 2px solid rgb(68, 68, 68);
+    border-radius: 0 1rem 0 1rem;
+    transition: all .3s;
+}
+
+button:hover{
+    background-color: #f2f2f2;
+    color: rgb(68, 68, 68);
+    border-radius: 1rem;
+    transition: all .3s;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    height: 30vh;
+    color: #ffffff;
+    padding: 30px 20%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+  }
+  
+
+  
+  .columna h3 {
+    margin-bottom: 10px;
+  }
+  
+  .columna ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .columna li{
+    padding: 5px 0;
+  }
+  
+
+  
+  .columna ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .columna ul li a:hover {
+    color: #ffcc00;
+  }
+  
+
+
+
+/* Media query para pantallas de escritorio (ejemplo: más de 1024px de ancho) */
+@media screen and (min-width: 1024px) {
+    /* Agrega tus estilos para escritorio aquí */
+  
+    body {
+      padding: 1rem 30%;
+    }
+  
+    .container {
+      padding: 2rem;
+      border-radius: 1.5rem;
+    }
+  
+    .date input {
+      max-width: 33%;
+      margin: 0 .1%;
+    }
+
+  }
+  
+
+
+

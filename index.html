@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RegisterForm Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/form.css" />
+    -
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <header>
+      <div id="logo">RegisterForm</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>RegisterForm</h1>
+      <h2>Crea tu Cuenta</h2>
+      <p>
+        Bienvenido a Soy Myke. Por favor, completa el formulario y forma parte
+        de nuestra comunidad!.
+      </p>
+      <form
+        action=""
+        method="get"
+        class="formulario"
+        onsubmit="vGenerales(event)"
+      >
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            oninput="vEmail()"
+            required
+            class="form-control is-invalid"
+            placeholder="Example@gmail.com"
+          />
+          <div class="vEmail"></div>
+        </div>
+        <div>
+          <label for="password">Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Escribe una contraseña"
+            oninput="vPass()"
+            required
+            class="form-control is-invalid"
+          />
+          <div class="vPassword"></div>
+        </div>
+        <div>
+          <label for="password2">Confirmar contraseña</label>
+          <input
+            type="password"
+            name="password2"
+            id="password2"
+            placeholder="Repite la contraseña"
+            oninput="vPass2()"
+            required
+            class="form-control is-invalid"
+          />
+          <div class="vPassword2"></div>
+        </div>
+        <div>
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Miguel"
+            oninput="validarNombre()"
+            required
+            class="form-control is-invalid"
+          />
+          <div class="vNombre"></div>
+        </div>
+        <div>
+          <label for="surname">Apellido</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Jimenez"
+            oninput="vSurname()"
+            required
+            class="form-control is-invalid"
+          />
+          <div class="vSurname"></div>
+        </div>
+        <div>
+          <label for="dni">DNI</label>
+          <input
+            type="number"
+            name="dni"
+            id="dni"
+            placeholder="Ingrese su DNI"
+            oninput="vDni()"
+            required
+            class="form-control is-invalid"
+          />
+          <div class="vDni"></div>
+        </div>
+
+        <label for="dia">Fecha de nacimiento</label>
+        <br />
+
+        <div class="row">
+          <div class="col-4">
+            <input
+              type="number"
+              name="dia"
+              placeholder="Dia"
+              id="dia"
+              oninput="vDia()"
+              required
+              class="form-control is-invalid"
+            />
+            <div class="vDate"></div>
+          </div>
+
+          <div class="col-4">
+            <input
+              type="number"
+              name="mes"
+              placeholder="Mes"
+              id="mes"
+              oninput="vMes()"
+              required
+              class="form-control is-invalid"
+            />
+            <div class="vDate2"></div>
+          </div>
+
+          <div class="col-4">
+            <input
+              type="number"
+              name="año"
+              placeholder="Año"
+              id="año"
+              oninput="vAño()"
+              required
+              class="form-control is-invalid"
+            />
+            <div class="vDate3"></div>
+          </div>
+        </div>
+        <div>
+          <label for="sexo">Sexo</label>
+          <select
+            name="sexo"
+            id="sexo"
+            oninput="vSexo()"
+            required
+            class="form-control is-invalid"
+          >
+            <option value="">Seleccionar</option>
+            <option value="men">hombre</option>
+            <option value="women">mujer</option>
+            <option value="undefined">Otro</option>
+          </select>
+          <div class="vSexo"></div>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            onclick="vCheckbox()"
+          />
+          <label for="checkbox">Acepto todos los Terminos y Condiciones</label>
+          <div class="vCheckbox"></div>
+        </div>
+        <div class="btn">
+          <button id="btn" type="submit" onclick="vGenerales(event)">
+            Enviar
+          </button>
+          <div class="vBtn"></div>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="columna">
+          <h3>Enlaces</h3>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="columna">
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="tel:1154100710">Teléfono</a></li>
+            <li><a href="mailto:jimenezvargasm@davinci.edu.ar">Email</a></li>
+            <li><a href="#">Davinci</a></li>
+          </ul>
+        </div>
+        <div class="columna">
+          <h3>Legales</h3>
+          <ul>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Aviso legal</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="assets/js/fondo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/formValid.js"></script>
+  </body>
+</html>

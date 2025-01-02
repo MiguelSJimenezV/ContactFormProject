@@ -1,8 +1,8 @@
-# ContactForm Project
+# RegisterForm Project
 
 ## Descripción
 
-El **ContactForm Project** es una página web diseñada para ofrecer un formulario de contacto interactivo, con varias validaciones en tiempo real, efectos visuales y una interfaz moderna. El proyecto utiliza tecnologías web actuales como **HTML5**, **CSS3**, **Bootstrap**, **JavaScript** y **JQuery** para proporcionar una experiencia de usuario fluida y atractiva.
+El **RegisterForm Project** es una página web diseñada para ofrecer un formulario de registro interactivo, con varias validaciones en tiempo real, efectos visuales y una interfaz moderna. El proyecto utiliza tecnologías web actuales como **HTML5**, **CSS3**, **Bootstrap**, **JavaScript** y **JQuery** para proporcionar una experiencia de usuario fluida y atractiva.
 
 Este formulario de contacto es ideal para ser integrado en proyectos donde se requiera una forma eficiente de capturar datos de los usuarios, como registros, suscripciones o cualquier otro tipo de interacción.
 
